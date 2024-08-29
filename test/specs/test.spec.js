@@ -5,10 +5,12 @@ describe("SauceDemo Login Tests", () => {
   beforeEach(async () => {
     await loginPage.open();
   });
-
+  
+ //thsi test is made to check that BasePage class works correctly
   it("check page title", async () => {
     await expect(browser).toHaveTitle("Swag Labs");
   });
+  
   it("UC-1 Test Login form with empty credentials", async () => {
     const username = await loginPage.input("username");
     const password = await loginPage.input("password");
