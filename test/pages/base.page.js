@@ -5,8 +5,5 @@ class BasePage {
   open() {
     return browser.url(this.url);
   }
-  // async open() {
-  //   return browser.url("https://www.saucedemo.com/");
-  // }
 }
 module.exports = BasePage;
